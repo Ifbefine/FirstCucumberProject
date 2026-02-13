@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Login" tests="5" skipped="0" failures="1" errors="0" timestamp="2026-02-13T10:36:48.411Z" hostname="DESKTOP-SF85RGA" time="23.203">
+  <properties/>
+  <testcase name="Successful login" classname="Login" time="10.362">
+    <failure message="org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to have text &quot;Logged in Success&quot;. Current text: &quot;Logged in success&quot;.&#13;&#10;(tried for 7 seconds with 500 milliseconds interval)&#10;Build info: version: '4.40.0', revision: 'b3333f1'&#10;System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.6'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 144.0.7559.133, chrome: {chromedriverVersion: 144.0.7559.133 (7da823b1d59..., userDataDir: C:\Users\Ifbefine\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50487}, goog:processID: 26048, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50487/devtoo..., se:cdpVersion: 144.0.7559.133, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: fc66e7f8c243f782757f00a97bdfab8b" type="org.openqa.selenium.TimeoutException">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to have text &quot;Logged in Success&quot;. Current text: &quot;Logged in success&quot;.
+(tried for 7 seconds with 500 milliseconds interval)
+Build info: version: '4.40.0', revision: 'b3333f1'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 144.0.7559.133, chrome: {chromedriverVersion: 144.0.7559.133 (7da823b1d59..., userDataDir: C:\Users\Ifbefine\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50487}, goog:processID: 26048, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50487/devtoo..., se:cdpVersion: 144.0.7559.133, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: fc66e7f8c243f782757f00a97bdfab8b
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
+	at com.ilcarro.pages.BasePage.shouldHaveText(BasePage.java:45)
+	at com.ilcarro.pages.LoginPage.verifyMessage(LoginPage.java:39)
+	at com.ilcarro.stepDefinitions.LoginSteps.verify_Success_login(LoginSteps.java:33)
+	at ✽.User veriffies Success message is displayed(file:///C:/QA2/FirstCucumberProject/src/test/resources/features/login.feature:10)
+</failure>
+  </testcase>
+  <testcase name="Login with correct email and wrong password #1" classname="Login" time="3.188"/>
+  <testcase name="Login with correct email and wrong password #2" classname="Login" time="3.194"/>
+  <testcase name="Login with correct email and wrong password #3" classname="Login" time="3.3"/>
+  <testcase name="Login with correct email and wrong password #4" classname="Login" time="3.159"/>
+  <system-out><![CDATA[
+@loginPositive
+?[1mScenario:?[22m Successful login                           ?[90m# src/test/resources/features/login.feature:4?[39m
+  ?[32m✔?[39m ?[32m?[1mGiven ?[22mUser launches Chrome browser?[39m               ?[90m# com.ilcarro.stepDefinitions.HomePageSteps.launch_Chrome_browser()?[39m
+  ?[32m✔?[39m ?[32m?[1mWhen ?[22mUser opens ilcarro HomePage?[39m                 ?[90m# com.ilcarro.stepDefinitions.HomePageSteps.open_ilcarro_HomePage()?[39m
+  ?[32m✔?[39m ?[32m?[1mAnd ?[22mUser clicks on Login link?[39m                    ?[90m# com.ilcarro.stepDefinitions.LoginSteps.click_on_login_link()?[39m
+  ?[32m✔?[39m ?[32m?[1mAnd ?[22mUser enters correct data?[39m                     ?[90m# com.ilcarro.stepDefinitions.LoginSteps.enter_correct_data()?[39m
+  ?[32m✔?[39m ?[32m?[1mAnd ?[22mUser cliks on Yalla button?[39m                   ?[90m# com.ilcarro.stepDefinitions.LoginSteps.click_on_yalla_button()?[39m
+  ?[31m✘?[39m ?[31m?[1mThen ?[22mUser veriffies Success message is displayed?[39m ?[90m# com.ilcarro.stepDefinitions.LoginSteps.verify_Success_login()?[39m
+        ?[31morg.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to have text "Logged in Success". Current text: "Logged in success".?[39m
+        ?[31m(tried for 7 seconds with 500 milliseconds interval)?[39m
+        ?[31mBuild info: version: '4.40.0', revision: 'b3333f1'?[39m
+        ?[31mSystem info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.6'?[39m
+        ?[31mDriver info: org.openqa.selenium.chrome.ChromeDriver?[39m
+        ?[31mCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 144.0.7559.133, chrome: {chromedriverVersion: 144.0.7559.133 (7da823b1d59..., userDataDir: C:\Users\Ifbefine\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50487}, goog:processID: 26048, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50487/devtoo..., se:cdpVersion: 144.0.7559.133, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}?[39m
+        ?[31mSession ID: fc66e7f8c243f782757f00a97bdfab8b?[39m
+        ?[31m	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)?[39m
+        ?[31m	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)?[39m
+        ?[31m	at com.ilcarro.pages.BasePage.shouldHaveText(BasePage.java:45)?[39m
+        ?[31m	at com.ilcarro.pages.LoginPage.verifyMessage(LoginPage.java:39)?[39m
+        ?[31m	at com.ilcarro.stepDefinitions.LoginSteps.verify_Success_login(LoginSteps.java:33)?[39m
+        ?[31m	at ✽.User veriffies Success message is displayed(file:///C:/QA2/FirstCucumberProject/src/test/resources/features/login.feature:10)?[39m
+  ?[36m↷?[39m ?[36m?[1mAnd ?[22mUser closes browser?[39m                          ?[90m# com.ilcarro.stepDefinitions.HomePageSteps.quit_browser()?[39m
+
+@wrongPassword @navigate
+?[1mScenario Outline:?[22m Login with correct email and wrong password ?[90m# src/test/resources/features/login.feature:27?[39m
+  ?[32m✔?[39m ?[32m?[1mGiven ?[22mUser launches Chrome browser?[39m                        ?[90m# com.ilcarro.stepDefinitions.HomePageSteps.launch_Chrome_browser()?[39m
+  ?[32m✔?[39m ?[32m?[1mWhen ?[22mUser opens ilcarro HomePage?[39m                          ?[90m# com.ilcarro.stepDefinitions.HomePageSteps.open_ilcarro_HomePage()?[39m
+  ?[32m✔?[39m ?[32m?[1mAnd ?[22mUser clicks on Login link?[39m                             ?[90m# com.ilcarro.stepDefinitions.LoginSteps.click_on_login_link()?[39m
+  ?[32m✔?[39m ?[32m?[1mAnd ?[22mUser enters correct email and wrong password?[39m          ?[90m# com.ilcarro.stepDefinitions.LoginSteps.enter_wrong_password(io.cucumber.datatable.DataTable)?[39m
+      | email                | password      |
+      | test123456789@gm.com | Test123456789 |
+  ?[32m✔?[39m ?[32m?[1mAnd ?[22mUser cliks on Yalla button?[39m                            ?[90m# com.ilcarro.stepDefinitions.LoginSteps.click_on_yalla_button()?[39m
+  ?[32m✔?[39m ?[32m?[1mThen ?[22mUser verifies Error message is displayed?[39m             ?[90m# com.ilcarro.stepDefinitions.LoginSteps.verify_Error_login()?[39m
+  ?[32m✔?[39m ?[32m?[1mAnd ?[22mUser closes browser?[39m                                   ?[90m# com.ilcarro.stepDefinitions.HomePageSteps.quit_browser()?[39m
+
+@wrongPassword @navigate
+?[1mScenario Outline:?[22m Login with correct email and wrong password ?[90m# src/test/resources/features/login.feature:28?[39m
+  ?[32m✔?[39m ?[32m?[1mGiven ?[22mUser launches Chrome browser?[39m                        ?[90m# com.ilcarro.stepDefinitions.HomePageSteps.launch_Chrome_browser()?[39m
+  ?[32m✔?[39m ?[32m?[1mWhen ?[22mUser opens ilcarro HomePage?[39m                          ?[90m# com.ilcarro.stepDefinitions.HomePageSteps.open_ilcarro_HomePage()?[39m
+  ?[32m✔?[39m ?[32m?[1mAnd ?[22mUser clicks on Login link?[39m                             ?[90m# com.ilcarro.stepDefinitions.LoginSteps.click_on_login_link()?[39m
+  ?[32m✔?[39m ?[32m?[1mAnd ?[22mUser enters correct email and wrong password?[39m          ?[90m# com.ilcarro.stepDefinitions.LoginSteps.enter_wrong_password(io.cucumber.datatable.DataTable)?[39m
+      | email                | password       |
+      | test123456789@gm.com | test123456789! |
+  ?[32m✔?[39m ?[32m?[1mAnd ?[22mUser cliks on Yalla button?[39m                            ?[90m# com.ilcarro.stepDefinitions.LoginSteps.click_on_yalla_button()?[39m
+  ?[32m✔?[39m ?[32m?[1mThen ?[22mUser verifies Error message is displayed?[39m             ?[90m# com.ilcarro.stepDefinitions.LoginSteps.verify_Error_login()?[39m
+  ?[32m✔?[39m ?[32m?[1mAnd ?[22mUser closes browser?[39m                                   ?[90m# com.ilcarro.stepDefinitions.HomePageSteps.quit_browser()?[39m
+
+@wrongPassword @navigate
+?[1mScenario Outline:?[22m Login with correct email and wrong password ?[90m# src/test/resources/features/login.feature:29?[39m
+  ?[32m✔?[39m ?[32m?[1mGiven ?[22mUser launches Chrome browser?[39m                        ?[90m# com.ilcarro.stepDefinitions.HomePageSteps.launch_Chrome_browser()?[39m
+  ?[32m✔?[39m ?[32m?[1mWhen ?[22mUser opens ilcarro HomePage?[39m                          ?[90m# com.ilcarro.stepDefinitions.HomePageSteps.open_ilcarro_HomePage()?[39m
+  ?[32m✔?[39m ?[32m?[1mAnd ?[22mUser clicks on Login link?[39m                             ?[90m# com.ilcarro.stepDefinitions.LoginSteps.click_on_login_link()?[39m
+  ?[32m✔?[39m ?[32m?[1mAnd ?[22mUser enters correct email and wrong password?[39m          ?[90m# com.ilcarro.stepDefinitions.LoginSteps.enter_wrong_password(io.cucumber.datatable.DataTable)?[39m
+      | email                | password       |
+      | test123456789@gm.com | TEST123456789@ |
+  ?[32m✔?[39m ?[32m?[1mAnd ?[22mUser cliks on Yalla button?[39m                            ?[90m# com.ilcarro.stepDefinitions.LoginSteps.click_on_yalla_button()?[39m
+  ?[32m✔?[39m ?[32m?[1mThen ?[22mUser verifies Error message is displayed?[39m             ?[90m# com.ilcarro.stepDefinitions.LoginSteps.verify_Error_login()?[39m
+  ?[32m✔?[39m ?[32m?[1mAnd ?[22mUser closes browser?[39m                                   ?[90m# com.ilcarro.stepDefinitions.HomePageSteps.quit_browser()?[39m
+
+@wrongPassword @navigate
+?[1mScenario Outline:?[22m Login with correct email and wrong password ?[90m# src/test/resources/features/login.feature:30?[39m
+  ?[32m✔?[39m ?[32m?[1mGiven ?[22mUser launches Chrome browser?[39m                        ?[90m# com.ilcarro.stepDefinitions.HomePageSteps.launch_Chrome_browser()?[39m
+  ?[32m✔?[39m ?[32m?[1mWhen ?[22mUser opens ilcarro HomePage?[39m                          ?[90m# com.ilcarro.stepDefinitions.HomePageSteps.open_ilcarro_HomePage()?[39m
+  ?[32m✔?[39m ?[32m?[1mAnd ?[22mUser clicks on Login link?[39m                             ?[90m# com.ilcarro.stepDefinitions.LoginSteps.click_on_login_link()?[39m
+  ?[32m✔?[39m ?[32m?[1mAnd ?[22mUser enters correct email and wrong password?[39m          ?[90m# com.ilcarro.stepDefinitions.LoginSteps.enter_wrong_password(io.cucumber.datatable.DataTable)?[39m
+      | email                | password       |
+      | test123456789@gm.com | тест123456789@ |
+  ?[32m✔?[39m ?[32m?[1mAnd ?[22mUser cliks on Yalla button?[39m                            ?[90m# com.ilcarro.stepDefinitions.LoginSteps.click_on_yalla_button()?[39m
+  ?[32m✔?[39m ?[32m?[1mThen ?[22mUser verifies Error message is displayed?[39m             ?[90m# com.ilcarro.stepDefinitions.LoginSteps.verify_Error_login()?[39m
+  ?[32m✔?[39m ?[32m?[1mAnd ?[22mUser closes browser?[39m                                   ?[90m# com.ilcarro.stepDefinitions.HomePageSteps.quit_browser()?[39m
+]]></system-out>
+  <system-err><![CDATA[SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+]]></system-err>
+</testsuite>

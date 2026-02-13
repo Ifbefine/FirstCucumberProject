@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Successful login</title>
+<link href="../../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<div class="breadcrumbs">
+<a class="breadcrumb" href="../../index.html">all</a> &gt; 
+<a class="breadcrumb" href="../index.html">com.ilcarro.TestRunner</a> &gt; 
+<a class="breadcrumb" href="index.html">Login</a> &gt; 
+<span class="breadcrumb">Successful login</span>
+</div>
+<div class="tab-container">
+<ul class="tabLinks">
+<li>
+<a class="failureGroup" href="#">Gradle Test Run :test</a>
+</li>
+</ul>
+<div class="tab">
+<h2>Gradle Test Run :test</h2>
+<h1>Successful login</h1>
+<div class="tab-container">
+<ul class="tabLinks">
+<li>
+<a class="" href="#">summary</a>
+</li>
+<li>
+<a class="" href="#">standard output</a>
+</li>
+<li>
+<a class="" href="#">error output</a>
+</li>
+</ul>
+<div class="tab">
+<h2>summary</h2>
+<div>
+<div class="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox">
+<div class="counter">1</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox">
+<div class="counter">1</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox">
+<div class="counter">0</div>
+<p>skipped</p>
+</div>
+</td>
+<td>
+<div class="infoBox duration">
+<div class="counter">10.362s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox failures successRate">
+<div class="percent">0%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="result-details">
+<h3>Failure details</h3>
+<span class="code">
+<pre id="root-0-test-failure-Successful login">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to have text &quot;Logged in Success&quot;. Current text: &quot;Logged in success&quot;.
+(tried for 7 seconds with 500 milliseconds interval)
+Build info: version: '4.40.0', revision: 'b3333f1'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 144.0.7559.133, chrome: {chromedriverVersion: 144.0.7559.133 (7da823b1d59..., userDataDir: C:\Users\Ifbefine\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50487}, goog:processID: 26048, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50487/devtoo..., se:cdpVersion: 144.0.7559.133, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: fc66e7f8c243f782757f00a97bdfab8b
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
+	at com.ilcarro.pages.BasePage.shouldHaveText(BasePage.java:45)
+	at com.ilcarro.pages.LoginPage.verifyMessage(LoginPage.java:39)
+	at com.ilcarro.stepDefinitions.LoginSteps.verify_Success_login(LoginSteps.java:33)
+	at ✽.User veriffies Success message is displayed(file:///C:/QA2/FirstCucumberProject/src/test/resources/features/login.feature:10)
+</pre>
+<button class="clipboard-copy-btn" aria-label="Copy to clipboard" data-copy-element-id="root-0-test-failure-Successful login">Copy</button>
+</span>
+</div>
+</div>
+</div>
+<div class="tab">
+<h2>standard output</h2>
+<span class="code">
+<pre id="root-0-test-stdout-Successful login">
+@loginPositive
+?[1mScenario:?[22m Successful login                           ?[90m# src/test/resources/features/login.feature:4?[39m
+  ?[32m✔?[39m ?[32m?[1mGiven ?[22mUser launches Chrome browser?[39m               ?[90m# com.ilcarro.stepDefinitions.HomePageSteps.launch_Chrome_browser()?[39m
+  ?[32m✔?[39m ?[32m?[1mWhen ?[22mUser opens ilcarro HomePage?[39m                 ?[90m# com.ilcarro.stepDefinitions.HomePageSteps.open_ilcarro_HomePage()?[39m
+  ?[32m✔?[39m ?[32m?[1mAnd ?[22mUser clicks on Login link?[39m                    ?[90m# com.ilcarro.stepDefinitions.LoginSteps.click_on_login_link()?[39m
+  ?[32m✔?[39m ?[32m?[1mAnd ?[22mUser enters correct data?[39m                     ?[90m# com.ilcarro.stepDefinitions.LoginSteps.enter_correct_data()?[39m
+  ?[32m✔?[39m ?[32m?[1mAnd ?[22mUser cliks on Yalla button?[39m                   ?[90m# com.ilcarro.stepDefinitions.LoginSteps.click_on_yalla_button()?[39m
+  ?[31m✘?[39m ?[31m?[1mThen ?[22mUser veriffies Success message is displayed?[39m ?[90m# com.ilcarro.stepDefinitions.LoginSteps.verify_Success_login()?[39m
+        ?[31morg.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to have text &quot;Logged in Success&quot;. Current text: &quot;Logged in success&quot;.?[39m
+        ?[31m(tried for 7 seconds with 500 milliseconds interval)?[39m
+        ?[31mBuild info: version: '4.40.0', revision: 'b3333f1'?[39m
+        ?[31mSystem info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.6'?[39m
+        ?[31mDriver info: org.openqa.selenium.chrome.ChromeDriver?[39m
+        ?[31mCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 144.0.7559.133, chrome: {chromedriverVersion: 144.0.7559.133 (7da823b1d59..., userDataDir: C:\Users\Ifbefine\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50487}, goog:processID: 26048, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50487/devtoo..., se:cdpVersion: 144.0.7559.133, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}?[39m
+        ?[31mSession ID: fc66e7f8c243f782757f00a97bdfab8b?[39m
+        ?[31m	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)?[39m
+        ?[31m	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)?[39m
+        ?[31m	at com.ilcarro.pages.BasePage.shouldHaveText(BasePage.java:45)?[39m
+        ?[31m	at com.ilcarro.pages.LoginPage.verifyMessage(LoginPage.java:39)?[39m
+        ?[31m	at com.ilcarro.stepDefinitions.LoginSteps.verify_Success_login(LoginSteps.java:33)?[39m
+        ?[31m	at ✽.User veriffies Success message is displayed(file:///C:/QA2/FirstCucumberProject/src/test/resources/features/login.feature:10)?[39m
+  ?[36m↷?[39m ?[36m?[1mAnd ?[22mUser closes browser?[39m                          ?[90m# com.ilcarro.stepDefinitions.HomePageSteps.quit_browser()?[39m
+</pre>
+<button class="clipboard-copy-btn" aria-label="Copy to clipboard" data-copy-element-id="root-0-test-stdout-Successful login">Copy</button>
+</span>
+</div>
+<div class="tab">
+<h2>error output</h2>
+<span class="code">
+<pre id="root-0-test-stderr-Successful login">SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+</pre>
+<button class="clipboard-copy-btn" aria-label="Copy to clipboard" data-copy-element-id="root-0-test-stderr-Successful login">Copy</button>
+</span>
+</div>
+</div>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="https://www.gradle.org">Gradle 9.3.0</a> at 13 февр. 2026 г., 12:37:14</p>
+</div>
+</div>
+</body>
+</html>
