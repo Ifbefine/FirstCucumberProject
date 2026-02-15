@@ -30,7 +30,7 @@ public class LoginSteps {
 
     @Then("User veriffies Success message is displayed")
     public void verify_Success_login(){
-        login.verifyMessage("Logged in Success");
+        login.verifyMessage("Logged in success");
     }
     @And("User enters correct email and wrong password")
     public void enter_wrong_password(DataTable table){
